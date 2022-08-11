@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente
+        ou diminua o tamanhho do seu nagegador </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+        <h1>Reproduzinado áudios</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+        <audio preload="metadata" autoplay controls>
+            <!--Usar o autoplay apenas - não esta funcionando-->
+            <!--Poderiamos usar o loop - mas a música (áudio assim que termina volta todo de novo)-->
+            <!--Usar Metadata pois os outros dois (none - não carrega nada e auto - carrega todo o site e todo seu áudio) -->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <!--Evite usar arquivos Wav por serem muito pesados-->
+            <!--O arquivo OGG é um arquivo Open Source-->
+            <!--Lembrando que a ordem é necessária para que o navegador tente tocar todos os arquivos-->
+            <p>Infelizmente seu nevegador não consegue carregar arquivos de áudio
+               <a href="midia/guanacast-33.mp3">Clique aqui para fazer o download do arquivo MP3 </a>
+            </p>
+        </audio>
+            
+</body>
+</html>

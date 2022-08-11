@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+    Em Html é Id e em Css é #
+    Em Html é Class e em Css é .
+*/
+body {
+        background-color: rgba(48, 252, 191, 0.829);
+        font-family: Arial, Helvetica, sans-serif;  
+}
+h1 {
+    color: rgba(4, 109,0);
+}
+h2 {
+    color:rgba(30, 75, 59, 0.863);
+}
+#principal{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif 20px;
+    background-color:  rgba(12, 110, 81, 0.829);
+    color: white;
+    /*Pode ou não colocar o h1 antes da hashtag ficando h1# ou # apenas*/
+}
+
+h2 {
+    color: rgb(68, 122, 61);
+}
+.basico {
+    color: rgb(68, 122, 61);
+    font-weight: bold;
+    
+}
+
+.intermediario {
+    color: rgb(111, 122, 61);
+        
+}
+
+.avancado {
+    color: rgb(122, 75, 61);
+}
+.destaque{
+    background-color: rgba(173, 173, 52, 0.664) ;
+}
